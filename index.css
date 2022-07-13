@@ -1,0 +1,230 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./shara_desert.jpg);
+    background-position: center;
+    background-size: cover;  
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;   
+}
+
+.navigation{
+    display: flex;
+    height: 12%;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+    font-size: 13px;  
+    font-weight: bold;
+    
+}
+
+a:hover{
+    color:pink;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.column{
+    flex-basis: 50%;
+}
+
+h1{
+    font-size: 90px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 13px;
+    color: white;
+    line-height: 25px;
+}
+
+button{
+    width: 180px;
+    color: black;
+    background: white;
+    font-size:15px;
+    font-weight: bold;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+.box{
+    width:200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    color: white;
+    transition: transform 0.5s;
+}
+
+h5{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.text{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 10px;
+    line-height: 25px;
+}
+.box1{
+    background-image: url(./pic-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box2{
+    background-image: url(./pic-2.png);
+    background-size:cover;
+    background-position: bottom;
+}
+
+.box3{
+    background-image: url(./pic-3.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+    background-position:bottom;
+}
+
+.box:hover{
+    transform:translateY(-12px); 
+}
+
+@media screen and (min-width:659px) and (max-width:980px) {
+    .container {
+        width: 110%;
+        height: 290vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./shara_desert.jpg);
+        background-position: center;
+        background-size: contain;
+        box-sizing: border-box;
+        padding-left: 8%;
+        padding-right: 8%;
+        background-repeat: repeat-y;   
+    }
+    
+    .menu-icon{
+        width: 30px;
+        cursor: pointer;
+        margin-left: 60px;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .column{
+        display: block;
+    }
+
+    .box{
+        width:500px;
+        height: 225px;
+        display: block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing:border-box;
+        cursor:pointer;
+        margin: 20px 120px;
+        color: white;
+        transition: transform 0.6s;
+    }
+
+    .box:hover{
+        transform: translateY(-10px);    
+    }
+
+    .box1{
+        background-image: url(./pic-1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .box2{
+        background-image: url(./pic-2.png);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .box3{
+        background-image: url(./pic-3.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .box4{
+        background-image: url(./pic-4.png);
+        background-size: cover;
+        background-position:center;
+    }
+    button{
+        width: 180px;
+        color: black;
+        background: white;
+        font-size:15px;
+        font-weight: bold;
+        padding: 12px 0;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 20px;
+        cursor:pointer;
+    }
+    a:hover{
+        color:pink;
+    }
+}
